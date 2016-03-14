@@ -1,0 +1,139 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ACK_BSY	frame.h	68;"	d
+ACK_ERR	frame.h	67;"	d
+ACK_OK	frame.h	66;"	d
+CC	Makefile	/^CC=arm-linux-gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -DDEBUG$/;"	m
+CLI_PORT	tcputils.h	7;"	d
+CMD_ACK	frame.h	43;"	d
+CMD_DIR	frame.h	42;"	d
+CMD_RQT	frame.h	41;"	d
+CMD_TYP	frame.h	40;"	d
+DBG	utils.h	11;"	d
+DBG	utils.h	8;"	d
+DEFAULT_DEVICE	v4l2.c	11;"	d	file:
+DEFAULT_DEVICE	v4l2.c	17;"	d	file:
+DIR_TOC	frame.h	63;"	d
+DIR_TOS	frame.h	62;"	d
+DRV_OV511	webcam.h	6;"	d
+DRV_ZC301	webcam.h	7;"	d
+ERR_PRINT_RET	utils.h	15;"	d
+FALSE	stdinc.h	33;"	d
+FRAME_ID	frame.h	11;"	d
+FRAME_ID_SIZ	frame.h	10;"	d
+MAXCONNECT	tcputils.h	4;"	d
+MKCMD	frame.h	45;"	d
+NR_REQBUF	v4l2.h	10;"	d
+OBJ	Makefile	/^OBJ=v4l2.o server.o utils.o tcputils.o webcam.o$/;"	m
+RQT_ACK	frame.h	59;"	d
+RQT_REQ	frame.h	58;"	d
+SER_PORT	tcputils.h	6;"	d
+TRUE	stdinc.h	29;"	d
+TYP_DAT	frame.h	52;"	d
+TYP_INF	frame.h	50;"	d
+TYP_QUI	frame.h	53;"	d
+TYP_SET	frame.h	51;"	d
+TYP_UDF	frame.h	54;"	d
+__FRAME_H__	frame.h	2;"	d
+__STDINC_H__	stdinc.h	2;"	d
+__TCPUTILS_H__	tcputils.h	2;"	d
+__UTILS_H__	utils.h	2;"	d
+__V4L2_H__	v4l2.h	2;"	d
+__WEBCAM_H__	webcam.h	2;"	d
+adjust_devinfo	server.c	/^void adjust_devinfo(void)$/;"	f
+args	v4l2.h	/^	void                    *args;      \/\/cbkä¼ å…¥å‚æ•°$/;"	m	struct:v4l2_device
+buf	v4l2.h	/^	struct v4l2_buf         *buf;       \/\/ç¼“å†²åŒº$/;"	m	struct:v4l2_device	typeref:struct:v4l2_device::v4l2_buf
+cam_server	server.c	/^void cam_server(void *args)$/;"	f
+camera_init	webcam.c	/^int camera_init(const char *dev, __u32 width, __u32 height, __u32 pixfmt)$/;"	f
+camera_restart	webcam.c	/^int camera_restart(const char *dev, __u32 width, __u32 height, __u32 pixfmt)$/;"	f
+camera_run	webcam.c	/^void* camera_run(void* args)$/;"	f
+camera_stop	webcam.c	/^int camera_stop(void)$/;"	f
+capture_cbk_t	v4l2.h	/^typedef int (*capture_cbk_t)(void *, __u32, void *);$/;"	t
+cbk	v4l2.h	/^	capture_cbk_t           cbk;        \/\/é‡‡é›†å¤„ç†å›è°ƒå‡½æ•°$/;"	m	struct:v4l2_device
+cbk_get_cur_frame	server.c	/^int cbk_get_cur_frame(void *ptr, __u32 siz, void *args)$/;"	f
+close_sock	tcputils.h	/^static inline void close_sock(int sock)$/;"	f
+cmd	frame.h	/^	__u32 cmd;                 \/\/ÃüÁîÀàĞÍ	$/;"	m	struct:frame_header
+cmdline_parse	server.c	/^int cmdline_parse(int argc, char *argv[])$/;"	f
+cres_no	frame.h	/^	__u32       cres_no;    \/\/µ±Ç°·Ö±æÂÊ±àºÅ$/;"	m	struct:ctrl_frame_hdr
+ctrl_frame_hdr	frame.h	/^struct ctrl_frame_hdr {   $/;"	s
+def_val	v4l2.h	/^	__s32                def_val;       \/\/é»˜è®¤å€¼$/;"	m	struct:v4l2_usrctrl
+drv	v4l2.h	/^	__u8                    drv[16];    \/\/driveråç§°$/;"	m	struct:v4l2_device
+fd	v4l2.h	/^	int                     fd;         \/\/è®¾å¤‡æ–‡ä»¶æè¿°ç¬¦               	$/;"	m	struct:v4l2_device
+fid	frame.h	/^	__u8  fid[FRAME_ID_SIZ];   \/\/Ö¡id, ÓÃÓÚ¼ø¶¨ÊÇ·ñ¸Ã´¦Àí¸ÃÖ¡$/;"	m	struct:frame_header
+fnr	frame.h	/^	__u32 fnr;                 \/\/Ö¡±àºÅ$/;"	m	struct:frame_header
+frame_header	frame.h	/^struct frame_header {$/;"	s
+fsiz	frame.h	/^	__u32 fsiz;                \/\/Ö¡´óĞ¡$/;"	m	struct:frame_header
+g_bcamoff	webcam.c	/^bool g_bcamoff = TRUE;    \/\/ÊÇ·ñ¹Ø±ÕÉè±¸±êÊ¶$/;"	v
+g_bcamrun	webcam.c	/^bool g_bcamrun = TRUE;    \/\/ÊÇ·ñÕıÔÚ²É¼¯±êÊ¶$/;"	v
+g_cam_cond	server.c	/^pthread_cond_t 	g_cam_cond;$/;"	v
+g_cam_mutex	server.c	/^pthread_mutex_t	g_cam_mutex;$/;"	v
+g_cam_tid	server.c	/^pthread_t g_cam_tid;     \/\/²É¼¯Ïß³Ì$/;"	v
+g_cur_frame	server.c	/^__u8   *g_cur_frame = NULL;$/;"	v
+g_cur_frame_len	server.c	/^__u32  g_cur_frame_len;$/;"	v
+g_cur_res_list	server.c	/^struct rect *g_cur_res_list;  \/\/µ±Ç°·Ö±æÂÊÁĞ±í$/;"	v	typeref:struct:rect
+g_cur_res_no	server.c	/^__u32  g_cur_res_no;         \/\/µ±Ç°Ñ¡ÔñµÄ·Ö±æÂÊ±êºÅ$/;"	v
+g_frame_nr	server.c	/^__u32  g_frame_nr = 0;$/;"	v
+g_pixfmt	server.c	/^__s32  g_pixfmt;$/;"	v
+g_ser_port	server.c	/^__u16  g_ser_port;$/;"	v
+g_ser_sock	server.c	/^int g_ser_sock;         \/\/·şÎñÆ÷ sock$/;"	v
+g_ser_tid	server.c	/^pthread_t g_ser_tid;     \/\/·şÎñÆ÷Ïß³Ì$/;"	v
+g_vd	webcam.c	/^v4l2_device_t g_vd; $/;"	v
+g_video_dev_name	server.c	/^char   *g_video_dev_name;$/;"	v
+get_cur_ms	utils.c	/^double get_cur_ms(void)$/;"	f
+get_frame_size	server.c	/^int get_frame_size(void *ptr, __u32 siz)$/;"	f
+get_jpeg_size	utils.c	/^int get_jpeg_size(void *ptr, __u32 siz)$/;"	f
+get_res_no	utils.c	/^int get_res_no(struct rect res, struct rect* res_list)$/;"	f
+get_res_nr	utils.c	/^int get_res_nr(struct rect* res_list)$/;"	f
+h	utils.h	/^	__u32 h;$/;"	m	struct:rect
+id	v4l2.h	/^	__u32                id;            \/\/ç”¨æˆ·æ§åˆ¶é¡¹id$/;"	m	struct:v4l2_usrctrl
+len	v4l2.h	/^	__u32 len;$/;"	m	struct:v4l2_buf
+main	server.c	/^int main(int argc, char *argv[])$/;"	f
+max	v4l2.h	/^	__s32                max;           \/\/æœ€å°å€¼$/;"	m	struct:v4l2_usrctrl
+min	v4l2.h	/^	__s32                min;           \/\/æœ€å¤§å€¼$/;"	m	struct:v4l2_usrctrl
+name	frame.h	/^	__u8        name[32];   \/\/Éè±¸Ãû³Æ$/;"	m	struct:ctrl_frame_hdr
+name	v4l2.h	/^	__u8                    name[32];   \/\/è®¾å¤‡åç§°$/;"	m	struct:v4l2_device
+name	v4l2.h	/^	__u8                 name[32];      \/\/åæ§åˆ¶é¡¹ç§°$/;"	m	struct:v4l2_usrctrl
+nr_buf	v4l2.h	/^	__u32                   nr_buf;     \/\/ç¼“å†²åŒºä¸ªæ•°$/;"	m	struct:v4l2_device
+nr_res	frame.h	/^	__u32       nr_res;     \/\/×Ü¹²Ö§³ÖµÄ·Ö±æÂÊ       $/;"	m	struct:ctrl_frame_hdr
+nr_uctrl	frame.h	/^	__u32       nr_uctrl;	\/\/ÓÃ»§¿ØÖÆÏîµÄ¸öÊı$/;"	m	struct:ctrl_frame_hdr
+nr_uctrl	v4l2.h	/^	__u32                   nr_uctrl;	\/\/ç”¨æˆ·æ§åˆ¶é¡¹çš„ä¸ªæ•°$/;"	m	struct:v4l2_device
+open_cli_sock	tcputils.c	/^int open_cli_sock(char *ip_addr, int port)$/;"	f
+open_ser_sock	tcputils.c	/^int open_ser_sock(int port)$/;"	f
+ov511_res	webcam.c	/^struct rect ov511_res[]={$/;"	v	typeref:struct:rect
+pfmt	v4l2.h	/^	struct v4l2_pix_format  pfmt;       \/\/å›¾åƒæ ¼å¼ï¼šé•¿å®½ã€æ•°æ®æ ¼å¼ç­‰$/;"	m	struct:v4l2_device	typeref:struct:v4l2_device::v4l2_pix_format
+pixfmt	frame.h	/^	__u32       pixfmt;     \/\/ÏñËØ¸ñÊ½$/;"	m	struct:ctrl_frame_hdr
+print_res_list	utils.c	/^void print_res_list(struct rect* res_list)$/;"	f
+read_sock	tcputils.c	/^int read_sock(int sock, unsigned char *buf, int len)$/;"	f
+rect	utils.h	/^struct rect {$/;"	s
+set_sockaddr	tcputils.c	/^static int set_sockaddr(struct sockaddr_in *sock_addr, char *ip_addr, int port)$/;"	f	file:
+sig_handler	server.c	/^void sig_handler(int signo)$/;"	f
+start	v4l2.h	/^	void   *start;$/;"	m	struct:v4l2_buf
+type	v4l2.h	/^	enum v4l2_ctrl_type	 type;          \/\/æ§åˆ¶é¡¹ç±»å‹ï¼šæ•´æ•°ã€å¸ƒå°”ç­‰$/;"	m	struct:v4l2_usrctrl	typeref:enum:v4l2_usrctrl::v4l2_ctrl_type
+uctrl	v4l2.h	/^	struct v4l2_usrctrl     *uctrl;     \/\/ç”¨æˆ·æ§åˆ¶é¡¹$/;"	m	struct:v4l2_device	typeref:struct:v4l2_device::v4l2_usrctrl
+v4l2_buf	v4l2.h	/^struct v4l2_buf {$/;"	s
+v4l2_capture_process	v4l2.c	/^int v4l2_capture_process(v4l2_device_t *vd)$/;"	f
+v4l2_capture_setup	v4l2.h	/^static inline capture_cbk_t v4l2_capture_setup(v4l2_device_t *vd, $/;"	f
+v4l2_capture_start	v4l2.c	/^int v4l2_capture_start(v4l2_device_t *vd)$/;"	f
+v4l2_capture_stop	v4l2.c	/^int v4l2_capture_stop(v4l2_device_t *vd)$/;"	f
+v4l2_close	v4l2.c	/^int v4l2_close(v4l2_device_t *vd)$/;"	f
+v4l2_device	v4l2.h	/^typedef struct v4l2_device {$/;"	s
+v4l2_device_t	v4l2.h	/^} v4l2_device_t;$/;"	t	typeref:struct:v4l2_device
+v4l2_get_uctrl	v4l2.h	/^static inline __s32 v4l2_get_uctrl(v4l2_device_t *vd, __u32 nr)$/;"	f
+v4l2_init	v4l2.c	/^int v4l2_init(v4l2_device_t *vd, __u32 width, __u32 height, __u32 pixfmt) $/;"	f
+v4l2_ioctl	v4l2.h	/^static inline int v4l2_ioctl(int fd, int request, void *arg)$/;"	f
+v4l2_mmap_init	v4l2.c	/^int v4l2_mmap_init(v4l2_device_t *vd)$/;"	f
+v4l2_open	v4l2.c	/^int v4l2_open(const __u8 *dev, v4l2_device_t *vd)$/;"	f
+v4l2_pfmt_init	v4l2.c	/^int v4l2_pfmt_init(v4l2_device_t *vd, __u32 width, __u32 height, __u32 pixfmt)$/;"	f
+v4l2_set_uctrl	v4l2.c	/^int v4l2_set_uctrl(v4l2_device_t *vd, __u32 nr, __s32 val)$/;"	f
+v4l2_uctrl_init	v4l2.c	/^int v4l2_uctrl_init(v4l2_device_t *vd)$/;"	f
+v4l2_uninit	v4l2.c	/^int v4l2_uninit(v4l2_device_t *vd) $/;"	f
+v4l2_usrctrl	v4l2.h	/^struct v4l2_usrctrl {$/;"	s
+val	v4l2.h	/^	__s32                val;           \/\/æ§åˆ¶é¡¹å½“å‰å€¼$/;"	m	struct:v4l2_usrctrl
+w	utils.h	/^	__u32 w;$/;"	m	struct:rect
+write_sock	tcputils.c	/^int write_sock(int sock, unsigned char *buf, int len)$/;"	f
+zc301_res	webcam.c	/^struct rect zc301_res[]={$/;"	v	typeref:struct:rect
